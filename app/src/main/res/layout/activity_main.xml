@@ -1,0 +1,528 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.wzlab.wifilink.main.MainActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="1dp"
+                android:text="@string/设置"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <View
+                android:id="@+id/margin"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_margin"
+                android:layout_below="@id/tv_title"
+                android:background="@color/margin_gray" />
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/tv_addr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/margin"
+                android:layout_marginLeft="@dimen/subtitle_left_margin"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:padding="@dimen/subtitle_padding"
+                android:text="@string/地址信息"
+                android:textColor="@color/black"
+                android:textSize="@dimen/subtitle_size" />
+
+            <View
+                android:id="@+id/v_1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_below="@id/tv_addr"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/row_height"
+                android:layout_below="@id/v_1"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_ip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:padding="1dp"
+                    android:text="@string/IP1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.wzlab.superedittext.SuperEditText
+                    android:id="@+id/et_ip1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="4"
+                    android:background="@null"
+
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_port1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:padding="1dp"
+                    android:text="@string/端口"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.wzlab.superedittext.SuperEditText
+                    android:id="@+id/et_port1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="7.2"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:maxLength="4"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/row_height"
+                android:layout_below="@id/ll1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_ip2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:padding="1dp"
+                    android:text="@string/IP2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.wzlab.superedittext.SuperEditText
+                    android:id="@+id/et_ip2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_port2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:padding="1dp"
+                    android:text="@string/端口"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.wzlab.superedittext.SuperEditText
+                    android:id="@+id/et_port2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="7.2"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/margin_1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_margin"
+                android:layout_below="@id/ll2"
+                android:background="@color/margin_gray" />
+
+            <TextView
+                android:id="@+id/tv_net"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/margin_1"
+                android:layout_marginLeft="@dimen/subtitle_left_margin"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:padding="@dimen/subtitle_padding"
+                android:text="@string/WIFI网络信息"
+                android:textColor="@color/black"
+                android:textSize="@dimen/subtitle_size" />
+
+            <View
+                android:id="@+id/v_2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_below="@id/tv_net"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/row_height"
+                android:layout_below="@id/v_2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:id="@+id/SSID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:padding="1dp"
+                    android:text="@string/SSID"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.wzlab.superedittext.SuperEditText
+                    android:id="@+id/et_ssid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_psk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:padding="1dp"
+                    android:text="@string/PSK"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.wzlab.superedittext.SuperEditText
+                    android:id="@+id/et_psk"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/row_height"
+                android:layout_below="@id/ll3"
+                android:layout_marginBottom="7dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:padding="1dp"
+                    android:text="@string/认证类型"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/sp_certify"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll41"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/row_height"
+                android:layout_below="@id/ll4"
+                android:layout_marginBottom="7dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_encrypt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:padding="1dp"
+                    android:text="@string/加密算法"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                     />
+
+                <Spinner
+                    android:id="@+id/sp_encrypt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/margin_2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_margin"
+                android:layout_below="@id/ll41"
+                android:background="@color/margin_gray" />
+
+            <TextView
+                android:id="@+id/tv_terminal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/margin_2"
+                android:layout_marginLeft="@dimen/subtitle_left_margin"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:padding="@dimen/subtitle_padding"
+                android:text="@string/终端信息"
+                android:textColor="@color/black"
+                android:textSize="@dimen/subtitle_size" />
+
+            <View
+                android:id="@+id/v_3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_below="@id/tv_terminal"
+                android:background="@color/line" />
+
+            <TextView
+                android:id="@+id/tv_tnum"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/row_height"
+                android:layout_below="@id/v_3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:padding="1dp"
+                android:text="@string/终端号"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.wzlab.superedittext.SuperEditText
+                android:id="@+id/et_tnum"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/row_height"
+                android:layout_below="@id/v_3"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/tv_tnum"
+                android:background="@null"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cb_cid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_tnum"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/CID校验" />
+
+            <CheckBox
+                android:id="@+id/cb_phone_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb_cid"
+                android:layout_marginLeft="5dp"
+                android:text="@string/电话线检测" />
+
+            <View
+                android:id="@+id/margin_3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_margin"
+                android:layout_below="@id/cb_phone_line"
+                android:background="@color/margin_gray" />
+
+            <LinearLayout
+                android:id="@+id/ll5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/margin_3"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_ctrl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/subtitle_left_margin"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:padding="@dimen/subtitle_padding"
+                    android:text="@string/反控方式"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/subtitle_size" />
+
+                <TextView
+                    android:id="@+id/tv_numbering"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/subtitle_left_margin"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:padding="@dimen/subtitle_padding"
+                    android:text="@string/编号方式"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/subtitle_size" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_4"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_below="@id/ll5"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/ll6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_4"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal" >
+
+                <RadioGroup
+                    android:id="@+id/rg_ctrl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dp"
+                    android:layout_weight="1" >
+
+                    <RadioButton
+                        android:id="@+id/rb_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/row_height"
+                        android:checked="true"
+                        android:text="@string/脉冲撤布防" />
+
+                    <RadioButton
+                        android:id="@+id/rb_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/row_height"
+                        android:text="@string/断开布防" />
+
+                    <RadioButton
+                        android:id="@+id/rb_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/row_height"
+                        android:text="@string/闭合布防" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg_numbering"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dp"
+                    android:layout_weight="1" >
+
+                    <RadioButton
+                        android:id="@+id/rb_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/row_height"
+                        android:checked="true"
+                        android:text="单用户，固定账号" />
+
+                    <RadioButton
+                        android:id="@+id/rb_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/row_height"
+                        android:text="自学习，随机初始" />
+
+                    <RadioButton
+                        android:id="@+id/rb_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/row_height"
+                        android:text="多用户，随机初始" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_link"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/ll6"
+                android:onClick="link"
+                android:text="@string/连接" />
+
+            <Button
+                android:id="@+id/bt_view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/bt_link"
+                android:onClick="view"
+                android:text="@string/查看" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">WiFi Link</string>
+    <string name="设置">报警终端设定</string>
+    <string name="网关信息">网关信息</string>
+    <string name="选择网关">选择网关</string>
+    <string name="IP1">IP1:</string>
+    <string name="Port">Port</string>
+    <string name="端口">端口:</string>
+    <string name="IP2">IP2:</string>
+    <string name="SSID">SSID:</string>
+    <string name="PSK">PSK:</string>
+    <string name="认证类型">认证类型:</string>
+    <string name="加密算法">加密算法:</string>
+    <string name="终端号">终端号:</string>
+    <string name="CID校验">CID校验</string>
+    <string name="电话线检测">电话线检测</string>
+    <string name="反控方式">反控方式</string>
+    <string name="脉冲撤布防">脉冲撤布防</string>
+    <string name="断开布防">断开布防</string>
+    <string name="闭合布防">闭合布防</string>
+    <string name="地址信息">地址信息</string>
+    <string name="WIFI网络信息">WIFI网络信息</string>
+    <string name="终端信息">终端信息</string>
+    <string name="连接">连接</string>
+    <string name="查看">查看终端当前设置信息</string>
+    <string name="编号方式">编号方式</string>
+</resources>
